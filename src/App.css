@@ -1,3 +1,18 @@
 .App {
-  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: Ubuntu;
+  color: #173562!important;
+  line-height: 1;
+  width: 100%;
+}
+
+p {
+  font-family: Arial,sans-serif;
+  color: #1c1c1c;
+  line-height: 23.2px;
 }
