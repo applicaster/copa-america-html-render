@@ -36,7 +36,7 @@ class App extends Component {
       let htmlContent;
       let cityData;
 
-      cityData = response.data.filter(item => item.slug === id || country);
+      cityData = response.data.filter(item => item.slug === id || item.slug === country);
 
       const {
         acf: {
