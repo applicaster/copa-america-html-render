@@ -26,13 +26,13 @@ class App extends Component {
 
   getHTMLContent() {
     const {
-      section,
+      category,
       id,
       country,
       langLocale
     } = this.state.params;
 
-    axios.get(`${WP_BASE_URL}/${section}`).then(response => {
+    axios.get(`${WP_BASE_URL}/${category}`).then(response => {
       let htmlContent;
       let cityData;
 
@@ -74,7 +74,7 @@ class App extends Component {
       country: urlParams.get('country'),
       id: urlParams.get('id'),
       langLocale: urlParams.get('langLocale'),
-      section: urlParams.get('section')
+      category: urlParams.get('category')
     }
 
     this.setState({
